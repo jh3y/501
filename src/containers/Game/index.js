@@ -82,7 +82,7 @@ class Game extends Component {
     const game = this.props.game
     const score = e.target.value
     let validScore = false
-    if (score <= 180 && score > 0 && score <= game[game.thrower].score)
+    if (score <= 180 && score > -1 && score <= game[game.thrower].score)
       validScore = true
     this.setState({
       validScore,
